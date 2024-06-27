@@ -537,7 +537,7 @@ In addition to the drawdown and portfolio value, we also present the key perform
 
 We have also generated more comprehensive plots and tables for the backtesting results. For detailed reports, please refer to the following links[^7].
 
-[^7]: The detailed report for target daily return = 0.015% can be found [here](https://gavin-op.github.io/component/page/backtest_0015_comm001_Bayesian_report.html), for target daily return = 0.02% can be found [here](https://gavin-op.github.io/component/page/backtest_002_comm001_Bayesian_report.html), and for target daily return = 0.025% can be found [here](https://gavin-op.github.io/component/page/backtest_0025_comm001_Bayesian_report.html).
+[^7]: The detailed report for target daily return = 0.015% can be found [here](https://html-preview.github.io/?url=https://github.com/laurence1126/Quant-Trading-Strategy/blob/main/output/backtest_0015_comm001_Bayesian_report.html), for target daily return = 0.02% can be found [here](https://html-preview.github.io/?url=https://github.com/laurence1126/Quant-Trading-Strategy/blob/main/output/backtest_002_comm001_Bayesian_report.html), and for target daily return = 0.025% can be found [here](https://html-preview.github.io/?url=https://github.com/laurence1126/Quant-Trading-Strategy/blob/main/output/backtest_0025_comm001_Bayesian_report.html).
 
 ## Appendices
 
