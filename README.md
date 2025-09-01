@@ -79,7 +79,7 @@ f_t &\sim \mathcal{N}(\mu_f, \Lambda_f)
 \end{align*}
 $$
 
-where $r_m$ is a row vector that represents the return time series of stock $m$ spanning in time $T$, $F = [f_1, \cdots, f_t]^T$ is a $T \times K$ matrix that represents the $K$ factors return time series spanning in time $T$, $\beta_m$ is a $K \times 1$ row vector that represents the factor loadings.
+where $r_m$ is a row vector that represents the return time series of stock $m$ spanning in time $T$, $F = [f_1, \cdots, f_T]^T$ is a $T \times K$ matrix that represents the $K$ factors return time series spanning in time $T$, $\beta_m$ is a $K \times 1$ row vector that represents the factor loadings.
 
 We are aiming to model the Bayesian posterior predictive moments $\text{E}(r_m)$ and $\text{Cov}(r_i, r_j)$, where $m, i, j \in [1, M]$. This will be the input for our Smart Beta (stock weights) calculation.
 
@@ -89,7 +89,7 @@ To maintain closed-form solutions in MV analysis, we adopted fully conjugate and
 
 $$
 \begin{align*}
-\beta\mid\sigma_m^2 &\sim \mathcal{N}(\beta_{m, 0}, g\sigma_m^2(F^TF)^{-1}) \\
+\beta_m\mid\sigma_m^2 &\sim \mathcal{N}(\beta_{m, 0}, g\sigma_m^2(F^TF)^{-1}) \\
 p(\sigma_m^2) &\propto \frac{1}{\sigma_m^2} \\
 p(\mu_f, \Lambda_f) &\propto |\Lambda_f|^{-\frac{K+1}{2}}
 \end{align*}
@@ -313,17 +313,17 @@ In this section, we are aiming to incorporate investor's forward-looking analyse
 
 Let $P \in \mathbb{R}^{N×K}$ denote a full-ranked pick matrix, $Q \in \mathbb{R}^N$ represent the views vector. A relative view $x\%$ on $F_1$ outperform $F_2$, and an absolute view $y\%$ on $F_2$ can be represented as:
 
-$$
+```math
 P = \begin{bmatrix}
 1 & -1 & 0 \\
-0 & 1 & 0 \\
+0 & 1 & 0
 \end{bmatrix},
 \qquad
 Q = \begin{bmatrix}
 x\% \\
-y\% \\
+y\%
 \end{bmatrix}
-$$
+```
 
 With the formulation:
 
